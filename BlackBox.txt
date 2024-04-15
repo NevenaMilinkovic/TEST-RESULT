@@ -1,0 +1,33 @@
+BlackBox testing
+program Calculator
+
+TestCase ID: 01
+TestCase Title: Prednost operatpra
+Desription: (mul)* i (div)/ -> (add)+ i (sub) -
+
+	Test No1. 	samo sabiranje; 		input:  2+2+2+2		Expetation: 8	Result: 8 	Test passed	
+	Test No.2.	Samo oduzimanje; 	input:  2-2-2-2 		Exp.:-4, 			Result:-4, 	Test passed
+	TestNo.3.	samo mnozenje, 	input:  2*2*2*2, 		Exp.:16, 		Result: 16,	Test passed
+	TestNo4.	samo deljenje		,input:  2/2/2/2, 	Exp.:0.25,		Result:0.25,  Test passed
+	TestNo.5.	isti prioritet mnozenja i deljenja,		input:  2*2/2*2, 		Exp.:4,		 Result:,		Test passed
+	TestNo.6.	isti prioritet mnozenja i deljenja,		input:  2/2*2/2, 	Exp.:1,		 Result:1,       Test passed
+	TestNo.7      sabiranje i oduzimanje,				input:  40-5+5, 		Exp.:40,		 Result:40, 	 Test passed
+	TestNo.9	mnozenje negativin brojeva,			input:  -5*(-5)*(-5)    Exp.:-125	 Result:ERROR  Test failed
+
+TestCase ID:02
+TestCase Tite: nepravilan usnos operatora
+	TestNo1.izraz zavrsava operatorom +,			input: 2+2+2+,			Exp: 6, 		Result:6, 	test passed
+	TestNo.2 izraz zavrsava operatorom minus,	input:2-2-2-,			Exp.:-2,		Result:-2,	Test passed
+	TestNo3.izraz zavrsava operatorom *,			input:2+2+2*			Exp.:6,		Result:6,	Test passed
+	TestNo.4 izraz zavrsava operatorom /			,inpt:2+2*2/,			Exp.:6		,Result:6,	Test passed
+	TestNo.5 izmedju dva broja nalazi se vise od jednog operatora,			inpt:2++2+2+2,		Exp.:ERROR,	Result:ERROR,		Test passed
+	TestNo.6 izmedju dva broja nalazi se vise od jednog operatora,			inpt:2+-2-+2,			Exp.:ERROR,	Result:ERROR,		Test passed
+	TestNo.7 unos teksta,		input:   exit,		Exp.:program prekida rad,		Rezultat:program prekida rad, 		Test passed
+	TestNo.8 unos teksta,		Input:  EXIT,	Exp.:program prekida rad,		Result:ERROR,						Test failed
+	TestNo.9 unos samo operatora		,Input:+-*/		 Exp.:  ERROR,		Result:  0,		Test failed
+
+
+
+
+
+
